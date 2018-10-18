@@ -22,7 +22,7 @@ function modal(){
     $('#modal').modal('show');
 }
 
-$('.add-to-text').click(function () {
+$('body').on('click', 'button.add-to-text', function () {
 
     const tooltipExternalId = $(this).data('tooltip');
     let text =  CKEDITOR.instances[editorId].getSelection().getSelectedText();
